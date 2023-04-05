@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Récupération des infos database et futur login wordpress
-echo "nom hote database"
+echo "nom hote database the host sur Azure "
 read madatabase
 echo "nom utilisateur azure maria db"
 read username
