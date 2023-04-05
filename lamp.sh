@@ -10,9 +10,6 @@ read password_here
 echo "nom de base de donnée wp"
 read database_wp_name_here
 
-
-
-
 sudo apt -y update
 # Installation de php
 sudo apt -y install php libapache2-mod-php php-mysql
@@ -64,29 +61,6 @@ sudo mariadb --user=$username --password=$password_here --host=$madatabase < ins
 # GRANT ALL on $database_wp_name_here.* to '$username_wp'@'$database_wp_name_here' identified by '$password_wp';
 # flush privileges;
 # exit;
-
-
-
-
-
-########################################################
-# wordpress config pour apache                          #
-########################################################
-#il semblerait que le vhost ne soit pas obligatoire, on fait sans pour l'instant
-# cd /etc/apache2/sites-available/
-
-# sudo echo '<VirualHost *:80>
-#     ServerAdmin webmaster@localhost
-#     DocumentRoot /var/www/html/wordpress
-
-#     EerroLog ${APACHE_LOG_DIR}/error.log
-#     CustomLog ${APACHE_LOG_DIR}/access.log combined
-# </VirtualHost>' > /etc/apache2/sites-available/000-default.conf
-
-
-
-
-
 
 
 
