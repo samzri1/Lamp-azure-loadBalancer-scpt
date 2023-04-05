@@ -47,7 +47,7 @@ sudo systemctl restart apache2
 
 ###config mariadb saas de wordpress
 
-#creation fichier instruction sql 
+#creation fichier instruction sql gggghhgghhh
 
 sudo echo "CREATE DATABASE IF NOT EXISTS $database_wp_name_here default character set utf8 collate utf8_unicode_ci;" > instructionsql.sql
 
