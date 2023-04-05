@@ -38,7 +38,7 @@ cd wordpress/
 
 sudo sed -i "s/database_name_here/$database_wp_name_here/" wp-config.php
 sudo sed -i "s/username_here/$username/" wp-config.php
-sudo sed -i "s/password_here/$password/" wp-config.php
+sudo sed -i "s/password_here/$passpassword_here/" wp-config.php
 sudo sed -i "s/localhost/$madatabase/" wp-config.php
 
 sudo chmod u-w wp-config.php
