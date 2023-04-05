@@ -11,7 +11,7 @@ echo "nom de base de donnée wp"
 read database_wp_name_here
 
 sudo apt -y update
-# Installation de php
+# Installation de phppppppppp
 sudo apt -y install php libapache2-mod-php php-mysql
 # Installation de Apache
 sudo apt -y install apache2
