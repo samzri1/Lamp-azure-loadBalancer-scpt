@@ -49,10 +49,11 @@ sudo systemctl restart apache2
 
 #creation fichier instruction sql gggghhgghhh
 
-sudo echo "CREATE DATABASE IF NOT EXISTS $database_wp_name_here default character set utf8 collate utf8_unicode_ci;" > instructionsql
+#sudo echo "CREATE DATABASE IF NOT EXISTS $database_wp_name_here default character set utf8 collate utf8_unicode_ci;" > instructionsql
 
 #connexion mariadb-client avec password et injection de nos instruction liée a wordpress
-sudo mariadb --user=$username --password=$password_here --host=$madatabase < instructionsql > output.tab
+sudo mariadb --user=$username --password=$password_here --host=$madatabase -e "create database $database_wp_name_here;"
+#sudo mariadb --user=$username --password=$password_here --host=$madatabase < instructionsql > output.tab
 
 # sudo mariadb --user=mdbg1admin1 --password=Adminpass1 --host=mariadbsaasdatabasee.mariadb.database.azure.com < instructionsql.sql > output.tab
 # creation de wordpressdb et utilisateur si elle n'existe pas
